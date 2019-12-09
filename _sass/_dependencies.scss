@@ -17,7 +17,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'black-gate';
+    src: url('/media/fonts/blackgate-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+$black-gate:    "black-gate",sans-serif;
 $sans-italic:   "proxima-nova-i",sans-serif;
 $sans-bold:     "proxima-nova-b",sans-serif;
 $sans-reg:      "proxima-nova-r",sans-serif;
@@ -52,13 +59,6 @@ $darkmode-alt: #484C51;
 $nav-active: #fff;
 $nav-secondary: $secondary-font;
 
-$faculty: #ba0c2f;
-$awards: #ed8800;
-$departmental: #ffcd00;
-$courses: #78be20;
-$enrollment:  #00b5e2;
-$affiliated: #642667;
-$dm-affiliated: #A23CA7;
 // UC Davis Colors
 // Supplemental bright color palette for UC Davis
 
@@ -70,15 +70,6 @@ $sunny-grass: #78be20;
 $sky-blue: #00b5e2;
 $recpool-blue: #008eaa;
 $wine-grape: #642667;
-// Supplemental neutral color palette for UC Davis
-$mu-brick: #c26e60;
-$harthall-stucco: #e6a65d;
-$sage-green: #9caf88;
-$evergreen: #00573f;
-$wintersky-gray: #5b7f95;
-$cenwalk-gray: #b1b3b3;
-$cork-oak: #aca39a;
-$shingle-brown: #4f2c1d;
 
 // Layouts
 
