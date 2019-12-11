@@ -85,5 +85,6 @@ h2 {
 *:before {
   box-sizing: border-box; }
 
-.main-info {
-  margin-top: 50%; }
+body {
+  background: url("/media/white_sand.png");
+  background-repeat: repeat; }
