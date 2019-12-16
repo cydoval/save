@@ -1,4 +1,35 @@
+html {
+  height:100%;
+}
 body {
   background: url("/media/white_sand.png");
   background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+.page-wrap {
+flex: 1 0 auto;
+}
+.paintbrush {
+  padding:4% 0;
+}
+.carousel-item {
+  width:inherit;
+}
+.outsourced {
+  list-style: none;
+  margin-top:5%;
+  li {
+    display: inline;
+    a {
+
+      font-size:3rem;
+      padding:8px 16px;
+    }
+  }
+}
+footer {
+  padding:2% 0;
+  flex-shrink: 0;
 }
