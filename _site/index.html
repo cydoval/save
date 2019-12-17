@@ -99,19 +99,38 @@
 
       <footer class="container text-center">
     <div class="foot-icons d-flex justify-content-center align-items-bottom">
-      <a href="/media/rupert.mov">
+      <a data-toggle="modal" data-target="#exampleModal" style="margin-top:5px">
         <img src="/media/cat.svg" alt="Cat icon">
       </a>
-      <a target="_blank" href="https://caes.ucdavis.edu">
+      <a style="margin-top:5px" target="_blank" href="https://caes.ucdavis.edu">
         <img src="/media/rugby.svg" alt="CAES logo">
       </a>
-      <a target="_blank" href="https://caes.ucdavis.edu">
+      <a style="margin-top:5px" target="_blank" href="https://caes.ucdavis.edu">
         <img src="/media/soccer.svg" alt="CAES logo">
       </a>
       <a target="_blank" href="https://caes.ucdavis.edu">
         <img src="/media/banjo.svg" alt="CAES logo">
       </a>
     </div>
+    <!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <video controls>
+          <source src="/media/test.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
 </footer>
 
 
