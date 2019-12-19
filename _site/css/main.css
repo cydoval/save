@@ -116,9 +116,14 @@ body {
 
 .outsourced {
   list-style: none;
-  margin-top: 3%; }
+  margin-top: 3%;
+  padding-left: 0;
+  margin-left: 0; }
   .outsourced li {
-    display: inline; }
+    display: block; }
+    @media (min-width: 576px) {
+      .outsourced li {
+        display: inline; } }
     .outsourced li a {
       color: rgba(37, 53, 51, 0.88);
       font-size: 3rem;

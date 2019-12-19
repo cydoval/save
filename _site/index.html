@@ -25,14 +25,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-
+  
   <link rel="alternate" type="application/rss+xml" title="Ashley Rae Edwards and Calvin Yeates Doval" href="http://localhost:4000/feed.xml" />
 
   <!-- documentation url copy -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-
-
+  <link href="/css/lity.css" rel="stylesheet">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/lity.js"></script>
 </head>
 
   <body>
@@ -41,6 +40,7 @@
 
 <div class="page-wrap">
   
+
 
 <div class="container text-center">
     <div id="carouselExampleIndicators" class="paintbrush carousel slide" data-ride="carousel">
@@ -99,114 +99,23 @@
 
       <footer class="container text-center">
     <div class="foot-icons d-flex justify-content-center align-items-bottom">
-      <a data-toggle="modal" data-target="#banjomodal">
-        <img src="/media/banjo.svg" alt="Banjo Icon">
-      </a>
-      <a data-toggle="modal" data-target="#rupertmodal" style="margin-top:5px">
-        <img src="/media/cat.svg" alt="Cat icon">
-      </a>
-      <a data-toggle="modal" data-target="#rugbymodal" style="margin-top:5px">
+      <a data-lity href="//vimeo.com/380387286" style="margin-top:5px">
         <img src="/media/rugby.svg" alt="Rugby icon">
       </a>
-      <a data-toggle="modal" data-target="#soccermodal" style="margin-top:5px">
+      <a data-lity href="//vimeo.com/380386466">
+        <img src="/media/banjo.svg" alt="Banjo Icon">
+      </a>
+      <a data-lity href="//vimeo.com/380388262" style="margin-top:5px">
+        <img src="/media/cat.svg" alt="Cat icon">
+      </a>
+      <a data-lity href="//vimeo.com/380390151" style="margin-top:5px">
         <img src="/media/soccer.svg" alt="Soccer icon">
       </a>
-      <a data-toggle="modal" data-target="#banjomodal" style="margin-top:5px">
+      <a data-lity href="//vimeo.com/380390151" style="margin-top:5px">
         <img src="/media/shoe.svg" alt="Banjo Icon">
       </a>
+
     </div>
-    <!-- Button trigger modal -->
-<!-- Modal -->
-<div class="modal fade" id="rupertmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <video style="width:100%;" controls>
-          <source src="/media/rupert.mp4" type="video/mp4">
-          <source src="/media/rupert.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="rugbymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <video style="width:100%;" controls>
-          <source src="/media/rugby.mp4" type="video/mp4">
-          <source src="/media/rugby.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="banjomodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <video style="width:100%;" controls>
-          <source src="/media/banjo.mp4" type="video/mp4">
-          <source src="/media/banjo.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="soccermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <video style="width:100%;" controls>
-          <source src="/media/soccer.mp4" type="video/mp4">
-          <source src="/media/soccer.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="shoemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <video style="width:100%;" controls>
-          <source src="/media/shoe.mp4" type="video/mp4">
-          <source src="/media/shoe.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
 </footer>
 
 
@@ -214,12 +123,10 @@
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   <script src="/js/cssbrowserselector.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-  <!-- dark mode toggle -->
 
 </body>
 </html>

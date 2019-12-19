@@ -26,8 +26,13 @@ flex: 1 0 auto;
 .outsourced {
   list-style: none;
   margin-top:3%;
+  padding-left:0;
+  margin-left:0;
   li {
-    display: inline;
+    display: block;
+    @include breakpoint (sm) {
+      display: inline;
+    }
     a {
       color:$primary-font;
       font-size:3rem;
