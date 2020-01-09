@@ -15,12 +15,17 @@ padding:16px;
 .left-side {
   text-align:center;
   @include breakpoint (md) {
-    padding-top:15%;
     text-align: right;
   }
 }
-.right-side {
-
+.row {
+  height:100vh;
+}
+.slider {
+  margin-top:-20%;
+  @include breakpoint (md) {
+    margin-top:-5%;
+  }
 }
 .paintbrush {
   padding:2% 0 3% 0;
@@ -55,16 +60,17 @@ padding:16px;
   }
 }
 .foot-icons {
-  justify-content: center;
-  @include breakpoint (md) {
-    justify-content: flex-end;
-  }
-}
-.footer {
   padding:1.25% 0;
   flex-shrink: 0;
   a {
       display: block;
       padding:0 1.5%;
   }
+  justify-content: center;
+  @include breakpoint (md) {
+    justify-content: flex-end;
+  }
+}
+.footer {
+
 }
