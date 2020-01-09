@@ -101,6 +101,11 @@ $wine-grape: #642667;
     }
 }
 
+@media (min-width: 768px) {
+  .container {
+      max-width: 960px !important;
+  }
+}
 
 
 @mixin fader {

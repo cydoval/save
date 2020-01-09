@@ -10,13 +10,17 @@ body {
 }
 .page-wrap {
 flex: 1 0 auto;
+padding:16px;
 }
 .left-side {
   text-align:center;
   @include breakpoint (md) {
-    margin-top:15%;
+    padding-top:15%;
     text-align: right;
   }
+}
+.right-side {
+
 }
 .paintbrush {
   padding:2% 0 3% 0;
